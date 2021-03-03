@@ -16,7 +16,7 @@ def browser(request):
     list_of_lang_code_table = [
         "ar", "zh-hans", "uk", "sk", "ru", "ro",
         "pt-BR", "pt", "pl", "nl", "ko", "it",
-        "fr", "fi", "es", "el", "eo", "en-gb",
+        "fr", "fi", "es", "el", "eo", "en",
         "de", "da", "cs", "ca"
     ]
 
@@ -42,7 +42,7 @@ def browser(request):
                              cs = Czech
                              da = Danish
                              de = German
-                             en-gb = British English
+                             en = British English
                              eo = Esperanto
                              el = Greek
                              es = Spanish
