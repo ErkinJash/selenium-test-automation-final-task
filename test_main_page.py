@@ -7,10 +7,10 @@ def test_guest_can_go_to_login_page(browser):
     page.open()
     page.go_to_login_page()
 
-    page2 = LoginPage(browser, browser.current_url)
-    page2.should_be_login_url()
-    page2.should_be_login_form()
-    page2.should_be_register_form()
+    login_page = LoginPage(browser, browser.current_url)
+    login_page.should_be_login_url()
+    login_page.should_be_login_form()
+    login_page.should_be_register_form()
 
 def test_guest_should_see_login_link(browser):
     link = " http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209?promo=midsummer "
