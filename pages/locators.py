@@ -16,3 +16,4 @@ class ProductPageLocators():
     ALERT_TOTAL_PRICE_IN_CART = (By.CSS_SELECTOR, "#messages > div.alert.alert-safe.alert-noicon.alert-info.fade.in")
     PRICE_OF_PRODUCT_IN_CART = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-info.fade.in strong")
     PRICE_OF_CHOSEN_PRODUCT = (By.CSS_SELECTOR, "#content_inner .price_color")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages .alertinner ")
