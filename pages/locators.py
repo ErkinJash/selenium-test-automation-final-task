@@ -17,3 +17,7 @@ class ProductPageLocators():
     PRICE_OF_PRODUCT_IN_CART = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-info.fade.in strong")
     PRICE_OF_CHOSEN_PRODUCT = (By.CSS_SELECTOR, "#content_inner .price_color")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages .alertinner ")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
