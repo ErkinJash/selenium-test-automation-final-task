@@ -1,6 +1,5 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
-from selenium.webdriver.common.by import By
 
 
 class ProductPage(BasePage):
@@ -41,4 +40,10 @@ class ProductPage(BasePage):
         assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
             "The message is not disappeared, but should be"
 
+    def should_not_be_item_in_basket(self):
+        assert self.is_not_element_present(*ProductPageLocators.NO_GOODS_IN_BASKET), \
+            "Item in the basket is presented, but should not be"
 
+    def should_be_message_empty_basket(self):
+        assert self.is_element_present(*ProductPageLocators.EMPTY_BASKET_MESSAGE), \
+            "Message about no item in the basket is not presented, but should be"

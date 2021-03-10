@@ -61,5 +61,5 @@ def browser(request):
                              zh-hans = Chinese''')
 
     yield browser
-    time.sleep(3)
+    time.sleep(1)
     browser.quit()
